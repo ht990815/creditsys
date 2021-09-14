@@ -1,0 +1,30 @@
+{
+  "id": "2170294",
+  "name": "credit",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1409672",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "15252726",
+      "name": "密 码",
+      "font_class": "mima",
+      "unicode": "e89f",
+      "unicode_decimal": 59551
+    },
+    {
+      "icon_id": "8042924",
+      "name": "面包屑",
+      "font_class": "mianbaoxie",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    }
+  ]
+}

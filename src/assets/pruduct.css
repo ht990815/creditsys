@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 幼圆;
+}
+body #app,
+html #app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+body #app .login-box,
+html #app .login-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+body #app .login-box .login,
+html #app .login-box .login {
+  width: 500px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 0 10px 2px white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #app .login-box .login #reset,
+html #app .login-box .login #reset,
+body #app .login-box .login #login,
+html #app .login-box .login #login {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: white;
+  margin: 5px;
+}
+body #app .login-box .login #login,
+html #app .login-box .login #login {
+  background-color: #409EFF95;
+}
+body #app .login-box .login #reset,
+html #app .login-box .login #reset {
+  background-color: #90939995;
+}
+body #app .login-box .login #login:hover,
+html #app .login-box .login #login:hover {
+  background-color: #409EFF;
+}
+body #app .login-box .login #reset:hover,
+html #app .login-box .login #reset:hover {
+  background-color: #909399;
+}
+body #app .login-box .User-agreement,
+html #app .login-box .User-agreement {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 62, 62, 0.3);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body #app .login-box .User-agreement .content,
+html #app .login-box .User-agreement .content {
+  padding: 10px;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  text-indent: 2em;
+}
+body #app .login-box .User-agreement .content #close,
+html #app .login-box .User-agreement .content #close {
+  height: 40px;
+  width: 100%;
+  margin-top: 50px;
+  background-color: #409EFF;
+  border: none;
+  color: white;
+}
+body #app .index,
+html #app .index {
+  width: 100%;
+  height: 100%;
+}
+body #app .el-container.is-vertical,
+html #app .el-container.is-vertical {
+  overflow: scroll;
+}
+body #app .el-container.is-vertical .Plate,
+html #app .el-container.is-vertical .Plate,
+body #app .el-container.is-vertical .chart-display,
+html #app .el-container.is-vertical .chart-display {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 30px;
+}
+body #app .el-container.is-vertical .Plate,
+html #app .el-container.is-vertical .Plate {
+  display: flex;
+  justify-content: space-around;
+}
+body #app .el-container.is-vertical .Plate > div,
+html #app .el-container.is-vertical .Plate > div {
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body #app .el-container.is-vertical .chart-display,
+html #app .el-container.is-vertical .chart-display {
+  border: 1px solid gray;
+}
+body #app .el-container.is-vertical .chart-display div,
+html #app .el-container.is-vertical .chart-display div {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+}
+body #app .el-container.is-vertical .chart-display #small-chart,
+html #app .el-container.is-vertical .chart-display #small-chart {
+  margin-right: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+body #app .el-container.is-vertical .chart-display #small-chart div,
+html #app .el-container.is-vertical .chart-display #small-chart div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  border: 1px solid gray;
+}

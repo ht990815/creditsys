@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="download()">下载</button>
+
+    <script>
+        function download() {
+            let xhr = new XMLHttpRequest();
+            xhr.open('get', 'https://img.alicdn.com/tfs/TB1nveReMoQMeJjy1XaXXcSsFXa-235-618.png');
+            xhr.responseType = "blob"; // 字节流 => 二进制流
+            // xhr.setRequestHeader('token', val); // 原生设置头部header
+            xhr.send();
+            xhr.onload = function () {
+                if (xhr.status == 200) {
+                    let fileName = xhr.response;
+                    let urlObject = window.URL; // window对象的URL对象时专门用来将blob或者file读取成一个url的
+                    let blob = new Blob([xhr.response]); // 代表二进制类型的大对象(blob对象)
+                    let a = document.createElement("a");
+                    a.href = urlObject.createObjectURL(blob);
+                    a.download = fileName;
+                    a.click();
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
